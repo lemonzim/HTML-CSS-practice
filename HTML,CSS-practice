@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<style>
+    *{box-sizing:border-box;}
+    .navigation{
+        font-family: sans-serif;
+        background: #094074;
+        color: #FFF380;
+        padding: 20px;
+        text-decoration: none;
+        margin-right: 05px;
+    }
+    form{
+        width:300px;
+        padding:10px;
+        background:#e9ecef;
+    }
+    input[type="text"],input[type="password"]{
+        width: 100%;
+        border:2px solid #094074;
+        display: block;
+        padding:10px;
+        margin-bottom: 5px;
+        background:#fff;
+    }
+    input:disabled{
+        opacity:0.5;
+    }
+    input:hover{
+        box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+        transition: ease-in-out 0.3s;
+    }
+    input:focus,input:hover:focus{
+        border-color: rgb(93,53,230);
+        outline-style: solid;
+        outline-color: rgb(93,53,230);
+        outline-width: 1px;
+        box-shadow: none;
+        transition: none;
+        transition: ease-in-out 0.3s;
+    }
+    
+</style>
+<html>
+    <head>
+
+        <title>Website Hazim</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <nav class="navigation">
+            <a href="#About me" class="navigation" >About me</a>
+            <a href="#Things I learn from HTML" class="navigation" >Things I learn from HTML</a>
+            <a href="#Things I am learning" class="navigation" >Things I am learning</a>
+            <a href="https://github.com/lemonzim" class="navigation" target="-blank">Github Link</a>
+        </nav>
+        
+        <h1>HTML,CSS PRACTICE</h1>
+            <hr>
+        <div>
+            <h1 id="About me">About me</h1>
+            <p> Nama: Muhammad Hazim Bin Ahmad Suhairi</p>
+            <p> Degree: Netcentric Computing</p>
+            <p> Email: hazimsu.01@gmail.com</p>
+        </div>
+
+        <div>
+            <h1 id="Things I am learning">Things I am learning</h1>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVA</li>
+                <li>Korean Language</li>
+            </ul>
+        </div>
+        
+        <div>
+            <h1 id="Things I learn from HTML">Things I learned from HTML (TAJUK GUNA H1)</h1>
+            <h2>INI GUNA H2</h2>
+            <h3>INI GUNA H3</h3>
+            <h4>INI GUNA H4</h4>
+            <p>Ini guna p </p>
+            <a href="https://github.com/lemonzim" target="-blank">ni guna a untuk link ke website lain (in this case my github)</a>
+            <ul>
+                <li>Ini</li>
+                <li>adalah</li>
+                <li>Unordered list</li>
+            </ul>
+            <ol>
+                <li>Ini</li>
+                <li>adalah</li>
+                <li>ordered list</li>
+            </ol>
+            <img src="../../../../Desktop/UITM SHAH ALAM/hazim uitm (passport) putih.png" alt="Muka Saya"/>
+            <form>
+                <input type="text" name="Email" placeholder="hazimsu.01@gmail.com" required/>
+                <input type="text" name="Email" placeholder="Disabled (takleh isi)" disabled />
+                <input type="password" name="Password" placeholder="........" required/>
+                <label for="laki">
+                <input id="laki" type="radio" name="laki-perempuan">Lelaki
+                </label>
+                <label for="perempuan">
+                <input id="perempuan" type="radio" name="laki-perempuan">Perempuan
+                </label>
+                <br>
+                <button type="submit">hantar</button><button type="reset">reset</button>
+
+            </form>
+            
+        </div>
+        
+    </body>
+</html>
