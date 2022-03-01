@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
 <style>
     *{box-sizing:border-box;}
     .navigation{
@@ -38,7 +42,10 @@
         transition: none;
         transition: ease-in-out 0.3s;
     }
-    
+    .div-border{
+        border: 1px solid;
+        margin-right: 550px;
+    }
 </style>
 <html>
     <head>
@@ -75,12 +82,14 @@
         </div>
         
         <div>
+            <div class="div-border">
             <h1 id="Things I learn from HTML">Things I learned from HTML (TAJUK GUNA H1)</h1>
             <h2>INI GUNA H2</h2>
             <h3>INI GUNA H3</h3>
             <h4>INI GUNA H4</h4>
             <p>Ini guna p </p>
             <a href="https://github.com/lemonzim" target="-blank">ni guna a untuk link ke website lain (in this case my github)</a>
+            </div>
             <ul>
                 <li>Ini</li>
                 <li>adalah</li>
