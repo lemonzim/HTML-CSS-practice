@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
--->
 <style>
     *{box-sizing:border-box;}
     .navigation{
@@ -13,11 +9,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         text-decoration: none;
         margin-right: 05px;
     }
-    form{
-        width:300px;
-        padding:10px;
-        background:#e9ecef;
-    }
+    
     input[type="text"],input[type="password"]{
         width: 100%;
         border:2px solid #094074;
@@ -44,7 +36,40 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     }
     .div-border{
         border: 1px solid;
-        margin-right: 550px;
+        width: 70%;
+        float:left;
+        
+    }
+    .div-list{
+        border: 1px solid;
+        width: 30%;
+        float:right;
+        
+    }
+    #About-me{
+        border: 1px solid;
+        width:50%;
+        height: 169px;
+        float: left;
+    }
+    #Things-I-am-learning{
+        border: 1px solid;
+        width:50%;
+        height: 169px;
+        float:right;
+
+    }
+    form{
+        width:300px;
+        padding:10px;
+        background:#e9ecef;
+        border: 10px solid;
+    }
+    .div-form{
+        border: 1px solid;
+        position:relative;
+        top: 100px;
+        
     }
 </style>
 <html>
@@ -56,23 +81,23 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     </head>
     <body>
         <nav class="navigation">
-            <a href="#About me" class="navigation" >About me</a>
+            <a href="#About-me" class="navigation" >About me</a>
             <a href="#Things I learn from HTML" class="navigation" >Things I learn from HTML</a>
-            <a href="#Things I am learning" class="navigation" >Things I am learning</a>
+            <a href="#Things-I-am-learning" class="navigation" >Things I am learning</a>
             <a href="https://github.com/lemonzim" class="navigation" target="-blank">Github Link</a>
         </nav>
         
         <h1>HTML,CSS PRACTICE</h1>
             <hr>
-        <div>
-            <h1 id="About me">About me</h1>
+        <div id="About-me">
+            <h1>About me</h1>
             <p> Nama: Muhammad Hazim Bin Ahmad Suhairi</p>
             <p> Degree: Netcentric Computing</p>
             <p> Email: hazimsu.01@gmail.com</p>
         </div>
 
-        <div>
-            <h1 id="Things I am learning">Things I am learning</h1>
+        <div id="Things-I-am-learning">
+            <h1 >Things I am learning</h1>
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -80,8 +105,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 <li>Korean Language</li>
             </ul>
         </div>
-        
-        <div>
+            <hr>
             <div class="div-border">
             <h1 id="Things I learn from HTML">Things I learned from HTML (TAJUK GUNA H1)</h1>
             <h2>INI GUNA H2</h2>
@@ -90,6 +114,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
             <p>Ini guna p </p>
             <a href="https://github.com/lemonzim" target="-blank">ni guna a untuk link ke website lain (in this case my github)</a>
             </div>
+            
+            <div class="div-list">
             <ul>
                 <li>Ini</li>
                 <li>adalah</li>
@@ -100,6 +126,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 <li>adalah</li>
                 <li>ordered list</li>
             </ol>
+            </div>
+            <hr>
+            
+            <div class="div-form">
             <img src="../../../../Desktop/UITM SHAH ALAM/hazim uitm (passport) putih.png" alt="Muka Saya"/>
             <form>
                 <input type="text" name="Email" placeholder="hazimsu.01@gmail.com" required/>
@@ -115,8 +145,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 <button type="submit">hantar</button><button type="reset">reset</button>
 
             </form>
+            </div>
             
-        </div>
         
     </body>
 </html>
