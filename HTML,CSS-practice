@@ -34,30 +34,13 @@
         transition: none;
         transition: ease-in-out 0.3s;
     }
-    .div-border{
-        border: 1px solid;
-        width: 70%;
-        float:left;
-        
-    }
-    .div-list{
-        border: 1px solid;
-        width: 30%;
-        float:right;
-        
-    }
     #About-me{
         border: 1px solid;
         width:50%;
-        height: 169px;
-        float: left;
-    }
-    #Things-I-am-learning{
-        border: 1px solid;
-        width:50%;
-        height: 169px;
-        float:right;
-
+        box-shadow: 10px 10px 20px rgba(0,0,0,1);
+        border-radius: 3%;
+        text-align: center;
+        margin:auto;
     }
     form{
         width:300px;
@@ -70,6 +53,54 @@
         position:relative;
         top: 100px;
         
+    }
+    .ball1{
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        margin: auto;
+        animation-name: ball1;
+        animation-duration: 5s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        
+    }
+     .ball2{
+        border-radius: 50%;
+        background: linear-gradient(35deg, red, yellow);
+        height: 200px;
+        width: 200px;
+        margin: auto;
+        animation-name: ball2;
+        animation-duration: 5s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+    }
+    @keyframes ball1{
+        0%{
+        background: linear-gradient(35deg, #ECFF43,#00B155);
+        }
+        50%{
+        background: linear-gradient(35deg, red, yellow);
+        transform: scale(1.2);
+        }
+        100%{
+        background: linear-gradient(35deg, #ECFF43,#00B155);
+        transform: scale(1);
+        }
+    }
+    @keyframes ball2{
+        0%{
+        background: linear-gradient(35deg, red, yellow); 
+        }
+        50%{
+        background: linear-gradient(35deg, #ECFF43,#00B155);
+        transform: scale(0.8);
+        }
+        100%{
+        background: linear-gradient(35deg, red, yellow); 
+        transform: scale(1);
+        }
     }
 </style>
 <html>
@@ -93,11 +124,9 @@
             <h1>About me</h1>
             <p> Nama: Muhammad Hazim Bin Ahmad Suhairi</p>
             <p> Degree: Netcentric Computing</p>
-            <p> Email: hazimsu.01@gmail.com</p>
-        </div>
-
-        <div id="Things-I-am-learning">
-            <h1 >Things I am learning</h1>
+            <a href="https://github.com/lemonzim" target="-blank">Github</a>
+            <a></a>
+            <h2>Things I am learning</h2>
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
@@ -106,29 +135,9 @@
             </ul>
         </div>
             <hr>
-            <div class="div-border">
-            <h1 id="Things I learn from HTML">Things I learned from HTML (TAJUK GUNA H1)</h1>
-            <h2>INI GUNA H2</h2>
-            <h3>INI GUNA H3</h3>
-            <h4>INI GUNA H4</h4>
-            <p>Ini guna p </p>
-            <a href="https://github.com/lemonzim" target="-blank">ni guna a untuk link ke website lain (in this case my github)</a>
-            </div>
-            
-            <div class="div-list">
-            <ul>
-                <li>Ini</li>
-                <li>adalah</li>
-                <li>Unordered list</li>
-            </ul>
-            <ol>
-                <li>Ini</li>
-                <li>adalah</li>
-                <li>ordered list</li>
-            </ol>
-            </div>
+            <div class="ball1"></div>
+            <div class="ball2"></div>
             <hr>
-            
             <div class="div-form">
             <img src="../../../../Desktop/UITM SHAH ALAM/hazim uitm (passport) putih.png" alt="Muka Saya"/>
             <form>
